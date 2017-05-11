@@ -1,0 +1,1227 @@
+Source and Basin Effects on Rotational Ground Motions:
+来源和盆地对旋转地面运动的影响
+Comparison with Translations
+翻译比较
+by Haijiang Wang, Heiner Igel, František Gallovič, and Alain Cochard 
+Abstract 
+摘要
+The recent availability of accurate observations of rotational ground mo-tions has reopened interest in understanding near-fault characteristics of such motions
+in the context of strong ground motion and earthquake engineering.
+最近提供旋转地面动作的准确观察重新开始了解近断层特征在强地面运动和地震工程的背景下这样的动议。
+In order to in-vestigate source and structure-dependent variations of rotational motions, we simulate
+several M 7 earthquakes with varying source scenarios on the Newport–Inglewood(NI) fault embedded in the 3D
+Los Angeles basin using a finite-difference method in the frequency range up to 0.5 Hz.
+为了调查旋转运动的源和结构依赖性变化，我们使用有限差分法在3D洛杉矶盆地嵌入的Newport-Inglewood（NI）故障中模拟了不同源场景的几次M7地震频率范围高达0.5 Hz。
+We use a precalculated database with several hundred numerical Green’s functions for a discretized model of the NI fault that al-
+lows arbitrary finite-fault scenarios to be synthesized by superposition.
+我们使用具有数百个数值Green函数的预先计算的数据库，用于NI故障的离散模型，允许通过叠加合成任意有限故障情景。
+We investigate source and basin effects on the rotational part of ground motion (namely maximum
+peak ground rotation rates and their variations) and compare them with the corresponding values of translational motion.
+我们调查地面运动旋转部分的源和盆地影响（即最大峰值地面旋转速率及其变化），并将其与平移运动的相应值进行比较。
+Our main conclusions are: (1) the pure strike-
+slip source mechanism leads to larger rotation rates around the vertical axis than
+around the horizontal ones; (2) variation of hypocenter introduces more scatter on
+ground rotation rate than variations of slip history; (3) the coprocessing of translation
+and rotation recordings might reveal information on local velocity structure as indi-
+cated by plane-wave theory; and (4) the attenuation of accelerations (horizontal com-
+ponents) and rotation rate (vertical component) with distance from the fault are very
+similar, suggesting that similar expressions (as a function of distance) as for the peak
+accelerations can be adopted for the peak rotation rates when determining their at-
+tenuation relations.
+我们的主要结论是：（1）纯粹的走滑源机制导致垂直轴周围的旋转速度大于水平轴旋转速度; 
+（2）震源的变化比滑动历史的变化引起地面旋转速度的更大的分散; 
+（3）翻译和旋转记录的协处理可能会显示平面波理论所指出的局部速度结构信息;
+（4）与断层距离的加速度（水平分量）和旋转速率（垂直分量）的衰减非常相似，这表明对于峰值加速度可以采用类似的表达式（作为距离的函数）确定其估计关系时的最高转速。
+Introduction
+In conventional earthquake engineering, seismic loads
+on structures are formulated only in terms of the three trans-
+lational ground-motion components. Nevertheless, each site
+on the surface is subjected to six types of motions: three
+translations along the x,y, and z axes as well as three rota-
+tions about these axes (plus six components of strain in a deformable body). The components of the vector of rotation Ω(x,t) are defined as half the curl of the wave field u(x,t) at the surface point
+引言
+在传统的地震工程中，结构上的地震荷载只是根据三种地震动地震动分量来制定的。
+然而，表面上的每个位置都受到六种类型的运动：沿x，y和z轴的三个平移以及关于这些轴的三个旋转（加上变形体中的六个应变分量）。
+旋转矢量的组成部分 x; t？被定义为波场u的卷曲的一半 x; t？在表面点x：Œ©？x; t ?? 1 = 2，àá√ó？x; t？：
+While the building response to translational motions has
+been thoroughly investigated, the study of building response
+to rotational motions is a relatively new field. The engineer-
+ing importance of rotational components of seismic strong
+ground motion was noted during the late sixties and early
+seventies of the last century (e.g., Newmark and Hall, 1969;
+Newmark and Rosenblueth, 1971). 
+建筑物对平移运动的反应已经彻底调查，建筑物对旋转运动的反应研究是一个比较新的领域。在上个世纪六十年代末和七十年代初期，
+注意到地震强地面运动的旋转部件的工程重要性（例如，1969年的纽马克和霍尔，1971年的纽马克和罗森布吕斯）。
+here are many reports
+about rotations of tombstones and stone lanterns during large
+earthquakes (e.g., Yamaguchi and Odaka, 1974). Zembaty
+(2006) also pointed out that rotation effects become espe-
+cially important in the case of high-rise buildings. Different
+studies have shown that rotational excitations around hori-
+zontal axes can be significant (e.g., Gupta and Trifunac,
+1987, 1988, 1989, 1990, 1991). 
+关于大型地震期间墓碑和石灯的旋转，有很多报道（例如，山口和大田，1974年）。Zembaty（2006）也指出，在高层建筑的情况下，旋转效应特别重要。
+不同的研究表明，水平轴周围的旋转激励可能是重要的（例如，Gupta和Trifunac，1987年，1988年，1989年，1990，1991）。
+For example, rotational ex-
+citations around horizontal axes are important for tall struc-
+tures supported by soft soil. Excitations around the vertical
+axis can dominate the response of long and stiff structures
+supported by soft soils (Zembaty and Boffi, 1994). Such
+buildings are very sensitive to angular momentum carried by
+rotational waves. Despite these obvious effects of rotational
+motions, they are not considered in earthquake engineering.
+例如，围绕水平轴的旋转传播对于由软土支撑的高结构是重要的。垂直轴线的激励可以控制由软土支撑的长而僵硬的结构的响应（Zembaty和Boffi，1994）。
+这样的建筑物对旋转波带来的角动量非常敏感。尽管旋转运动有明显的影响，但在地震工程中并不考虑这些影响。
+Theoretical studies (e.g., Boratynski and Teisseyre,
+2004; Teisseyre, 2004) and observational results (e.g.,
+Nigbor, 1994; Spudich
+et al.
+, 1995; McLeod
+et al.
+, 1998;
+Spillman
+et  al.
+, 1998; Takeo, 1998) considered rotational
+motions excited by a distant seismic source. 
+理论研究（例如，Boratynski和Teisseyre，2004; Teisseyre，2004）和
+观察结果（例如，Nigbor，1994; Spudich等，1995; McLeod等，1998; Spillman等，1998; Takeo，1998）考虑由遥远的震源激发的旋转运动。
+A first contribu-
+tion was a simulation study of rotational effects by Bouchon
+and Aki (1982), who simulated rotational ground motions
+near earthquake faults buried in layered media for strike-
+slip and dip-slip fault models and obtained a maximum rota-tional velocity of
+1
+:
+5
+×
+10
+
+3
+rad
+=
+sec produced by a buried
+30 km long strike-slip fault with slip of 1 m (seismic moment
+of
+8
+×
+10
+18
+N m). Such small rotational motions are difficult
+to measure.
+第一个贡献是Bouchon和Aki（1982）的旋转效应的模拟研究，他们模拟了分层介质中的地震断层附近的旋转地面运动，用于滑移和滑移断层模型，并获得了美国地震学会最大旋转1162号公报。
+99，No.2B，pp.162-21173，May 2009，doi：10.1785 / 0120080115 tional velocity of 1:5×10？3 rad = sec，由30 m长的走滑断层产生，滑移为1 m（地震矩为8×10 18 N m）。这种小的旋转运动很难测量。
+Deployment of strong-motion accelerographs in many
+seismic areas of the world during the past decades has pro-
+duced data on translational components of motion during
+many strong earthquakes. These data describe strong motion
+in three orthogonal directions (two horizontal and one ver-
+tical), but because the spacing of the recording sites is much
+larger than the wavelengths of the recorded motions, little is
+known today about the accompanying differential and rota-
+tional motions in most areas of the world except some rare
+studies (e.g., Spudich
+et  al.
+, 1995; Huang, 2003; Spudich
+and Fletcher, 2008).
+在过去几十年间，世界许多地震区域的强运动加速度图的部署已经产生了许多强震中运动平移分量的数据。这些数据描述了三个正交方向（两个水平和一个正切）的强运动，
+但是由于记录位置的间距比记录的运动的波长大得多，目前世界上大多数地区的差异和旋转运动几乎不知道，除了一些罕见的研究（例如，Spudich等， 1995; Huang，2003; Spudich和Fletcher，2008）。
+In recent decades ring laser technology succeeded in
+detecting weak rotational motions radiated by earthquakes
+(McLeod
+et al.
+, 1998; Pancha
+et al.
+, 2000; Igel
+et al.
+, 2005;
+Cochard
+et al.
+, 2006; Igel
+et al.
+, 2007). At teleseismic dis-
+tances the seismic-wave field can be well approximated by
+plane waves. For example, let us assume a transverse plane
+wave described by displacement
+u
+
+0
+;u
+y
+
+t
+
+x=c
+
+;
+0
+
+propagating at phase velocity
+c
+. It can be shown using
+equation (1) that the associated rotation rate is
+Ω
+z
+
+x;t
+
+
+2
+c
+
+
+1
+
+u
+y
+
+t
+
+x=c
+
+(Igel
+et al.
+, 2005). Therefore, under the
+plane-wave assumption, rotation rate and transverse accel-
+eration are in phase at any time and the amplitudes are re-
+lated by
+
+u
+y
+
+x;t
+
+=
+Ω
+z
+
+x;t
+
+2
+c:
+(2)
+Igel
+et al.
+(2005) studied the similarity between the colocated
+translations and rotations recorded by the ring laser.
+近几十年来，环形激光技术成功地检测了地震辐射的微弱旋转运动（McLeod et al。，1998; Pancha et al。
+，2000; Igel et al。，2005; Cochard et al。，2006; Igel et al。，2007 ）。在远震时，地震波场可以很好地接近于平面波。
+例如，我们假定一个横向平面波由位移u 0;你 t？x = c ; 0？以相速度c传播。可以使用公式（1）来表示相关联的旋转速率为Ωz？X; t ?? ?? 2 c？？1？你啊 t？x = c （Igel等，2005）。
+因此，在平面波假设下，旋转速率和横向加速度在任何时间都是同相的，振幅是相关的？你啊 x; t？=Ωz？x; t ??? 2 c：（2）Igel et al。（2005）研究了由环形激光器记录的共位平移和旋转之间的相似性。
+ Their
+observations (over the frequency range 1
+–
+150 sec) showed
+that the waveforms have the expected similarity, and that
+the amplitude ratios allow an accurate estimate of horizon-
+tal phase velocities (Igel
+et al.
+, 2005; Cochard
+et al.
+, 2006;
+Igel
+et al.
+, 2007). However, in the near-source region, the
+fundamental assumption of the aforementioned study
+—
+plane-wave propagation
+—
+might be violated.
+他们的观察结果（频率范围在1-150秒）表明波形具有预期的相似性，振幅比允许准确估计水平相速度（Igel et al。，2005; Cochard et al。，2006 ; Igel等，2007）。然而，在近源地区，上述研究的基本假设 - 平面波传播可能会受到侵犯。
+Translational and rotational components of strong mo-
+tion radiated from an earthquake source are modified along
+the propagation path through interference, focusing, scatter-
+ing, and diffraction phenomena. In this article, we investigate
+how ground rotation rates vary for a given slip history and
+varying hypocenter location, as well as for fixed hypocen-
+ter location and varying slip history. We perform numerical
+modeling considering realistic a quasi-dynamic source and
+3D
+velocity models for the frequency range up to 0.5 Hz
+and compare with the corresponding effects on translations.
+通过干扰，聚焦，散射和衍射现象沿着传播路径修改了从地震源辐射的强烈运动的平移和旋转分量。在本文中，我们研究了给定的滑移历史和变化的震源位置以及固定的重心位置和变化滑移历史的地面旋转速率是如何变化的。
+我们执行数值模拟，考虑到逼近的准动态源和3D速度模型，频率范围高达0.5 Hz，并与对翻译的相应影响进行比较。
+Numerical Green
+’
+s Functions
+In the following, we describe the basic concept of
+the numerical Green
+’
+s functions (
+NGFs
+) approach, which
+is based on the discretization of the representation theorem(e.g., Aki and Richards, 2002; Spudich and Xu, 2003; Wang
+et al.
+, 2008). A target fault plane is divided into equal-sized
+rectangular subfaults and for each of these subfaults, the cor-
+responding ground response, denoted as
+NGF
+, is calculated
+using a double-couple source mechanism (pure strike slip)
+with an impulselike slip velocity function. 
+数值绿色函数在下文中，我们描述了基于表示定理的离散化的数值格林函数（NGFs）方法的基本概念（例如，Aki和Richards，2002; Spudich和Xu，2003 ; Wang等人，2008）。目标故障平面被划分为相等大小的矩形子故障，
+并且对于这些子故障中的每一个，使用表示为NGF的相应的地面响应使用具有脉冲滑移速度函数的双联源机制（纯冲击滑移）来计算。
+Then, a finite-
+source scenario can be synthesized by superposition of these
+NGFs
+convolved with appropriate slip functions. The method
+is equivalent to that used, for example, in the COMPSYN
+code (Spudich and Xu, 2003), which, however, assumes only
+a
+1D
+medium. More detailed information about our method
+can be found in Wang (2007) and Wang
+et al.
+(2008, equa-
+tions 1 to 4). The forward calculations can be carried out
+using any numerical solution to the
+3D
+wave propagation
+problem. 
+然后，可以通过用适当的滑移函数卷积的这些NGF的叠​​加来合成有限源场景。该方法等同于例如在COMPSYN代码（Spudich和Xu，2003）中使用的方法，然而，它仅假定1D介质。
+关于我们的方法的更详细的信息可以在Wang（2007）和Wang等人 （2008年，方程1至4）。可以使用3D波传播问题的任何数值解来进行正向计算。
+Here, we employ a high-order (fourth order in
+space, second order in time) staggered-grid finite-difference
+approach (e.g., Igel
+et al.
+, 1995; Graves, 1996; Ewald
+et al.
+,
+2006) with efficient absorbing boundaries using perfectly
+matched layers (e.g., Collino and Tsogka, 2001; Marcinko-
+vich and Olsen, 2003) and averaging of elastic moduli and
+densities to avoid diffraction effects (Moczo
+et al.
+, 2002).
+The components of the vector of rotation are extracted by
+calculating half the curl of the wave field at the surface
+(equation 1).
+在这里，我们采用高阶（空间四阶，时间上的二阶）交错网格有限差分方法（例如，Igel等，1995; Graves，1996; Ewald等，2006），其具有使用完全匹配层的有效吸收边界
+（例如，Collino和Tsogka，2001; Marcinkovich和Olsen，2003）和平均弹性模量和密度以避免衍射效应（Moczo等，2002）。通过计算表面波场的一半卷曲来提取旋转矢量的分量（等式1）。
+We apply the
+NGF
+method to the Newport
+–
+Inglewood
+(
+NI
+) fault system located in the Los Angeles (
+LA
+) basin
+(Fig. 1). A domain of
+96
+×
+87
+×
+25
+:
+5
+km, in the two hori-
+zontal and vertical directions, is selected as the study area,
+being rotated in order to have the
+x
+axis parallel to the
+NI
+fault. The velocity model is based on the elastic part of
+the Southern California Earthquake Center (
+SCEC
+)
+3D
+veloc-
+ity model for the
+LA
+basin (version 3, Kohler
+et al.
+, 2003),
+not considering the inelastic attenuation. The depth of a
+shear-wave velocity isosurface,
+2
+:
+0
+km
+=
+sec, is shown in Fig-
+ure 2. To reduce the computational effort and the size of the
+database, we truncate the seismic velocities at
+1
+:
+4
+km
+=
+sec,
+which gives a maximum frequency resolution of 0.56 Hz
+with our grid spacing of 0.3 km (Wang
+et al.
+, 2008). 
+我们将NGF方法应用于位于洛杉矶（LA）盆地的Newport-Inglewood（NI）断层系统（图1）。
+选择96×87×25：5 km的两个水平和垂直方向的域作为研究区域旋转，以使x轴平行于NI故障。
+速度模型基于洛杉矶盆地南加州地震中心（SCEC）3D速度模型的弹性部分（版本3，Kohler等，2003），不考虑非弹性衰减。剪切波速度等值面的深度如图2所示。
+为了减少计算量和数据库的大小，我们截断了1：4 km = sec的地震速度，这使得我们的网格间距为0.3km的最大频率分辨率为0.56Hz（Wang等人，2008）。
+ Note
+that such a maximum frequency makes our study relevant,
+from the engineering point of view, to rather large-scale
+structures (bridges, etc.). For other structures higher frequen-
+cies would be necessary, but we are limited by the computa-
+tional demand. Moreover, for frequencies larger than, say,
+1 Hz the medium model is not detailed enough and some
+stochastic modeling approach would have to be adopted.
+注意，这样的最大频率使得我们的研究从工程的角度来看相当大的结构（桥梁等）。对于其他结构，更高的频率是必要的，但是我们受到计算需求的限制。
+此外，对于大于（例如）1 Hz的介质模型不够详细，必须采用一些随机建模方法。
+The
+NI
+fault is chosen for several reasons: it hosted
+the
+M
+6.4 Long Beach earthquake in 1933 (Hauksson and
+Gross, 1991), causing serious damage in
+LA
+, and it is still
+considered the most probable source for a damaging
+M
+7
+earthquake in the
+LA
+area (Toppozada
+et  al.
+, 1989). The
+near-vertical plane can be approximated by a vertical plane
+in the numerical calculation, and the predominant right-
+lateral slip can be approximated with a pure strike-slip mech-
+anism (Grant and Shearer, 2004). The seismic radiation,
+which is expected to be sensitive to geometric complexity, is
+in this case of relatively mature fault well approximated with
+a plane-fault assumption (Gallovi
+č
+et al.
+, 2008; Käser and
+Gallovi
+č
+, 2008).
+First, as done for the velocity part of ground motion by
+Wang
+et al.
+(2008), we determine the fault discretization that
+provides sufficiently accurate synthetics. The computational
+setup and source parameters are given in Table 1. The spatial
+extent of the hypothetical
+M
+7 earthquake fault is obtained from the source-scaling relation by Wells and Coppersmith
+(1994). The fault length
+L
+and width
+W
+equal 36 and 18 km,
+respectively. The continuous solution has
+120
+×
+60
+subfaults
+of side 0.3 km, which corresponds to the grid minimum dis-
+tance in the finite difference (
+FD
+) mesh.
+选择NI故障有几个原因：它在1933年主持了M 6.4长滩地震（Hauksson and Gross，1991），造成LA的严重破坏，仍然被认为是造成M7地震的最有可能的根源洛杉矶地区（Toppozada et al。，1989）。
+近似垂直平面可以通过数值计算中的垂直平面近似，并且主要的右侧滑移可以用纯走滑机制近似（Grant和Shearer，2004）。地震辐射，在这种情况下，预期对几何复杂度敏感，
+在这种情况下，相对成熟的故障很好地与平面故障假设近似（Gallovič等人，2008;Käser和Gallovič，2008）。首先，对于Wang等人的地面运动速度部分，（2008），我们确定提供足够精确的合成的故障离散化。
+计算设置和源参数在表1中给出。假设的M7地震断层的空间范围是从Wells和Coppersmith（1994）的源缩放关系中获得的。故障长度L和宽度W分别为36和18公里。连续解决方案有120×60个侧面0.3 km的子故障，这对应于有限差分（FD）网格中的网格最小距离。
+The quasi-dynamic rupture process is calculated accord-
+ing to the method published in Guatteri
+et al.
+(2004). In this
+model the rupture evolution (including slip velocities) is de-
+termined from a given realization of random slip distribution
+described by a
+2D
+Gaussian autocorrelation function. In our
+case we use an isotropic correlation length of 5 km for both
+the strike and dip directions. An example of a realization of
+such a final slip distribution is shown in the inset of Figure 1.
+Following Guatteri
+et al.
+(2004), from the given slip distri-
+bution, we compute the static stress change and use a scaling
+relation to constrain the temporal rupture evolution in terms
+of nonconstant rupture times and rise times. In this way, the
+slip evolution to some extent correlates with the slip and the
+stress drop.
+准动力破裂过程按照Guatteri等人发表的方法计算。（2004年）。在这个模型中，断裂演化（包括滑移速度）由给定的2D高斯自相关函数描述的随机滑动分布的实现确定。在我们的情况下，我们使用5千米的各向同性相关长度作为罢工和倾斜方向。
+在图1的插图中示出了实现这种最终滑移分布的示例。Guatteri等人 （2004）从给定的滑动分布中，我们计算静应力变化，并使用缩放关系来限制不稳定断裂时间和上升时间的时间断裂演化。这样，滑移演化在一定程度上与滑移和应力下降有关。
+An
+M
+7 finite-fault earthquake scenario is first simulated
+with all the
+120
+×
+60
+subfaults (treated as the continu-
+ous solution). As the ground motions are to be synthe-
+sized for a huge number of receivers spanning the whole
+surface of the computational domain, we seek the coarsest
+fault discretization in order to save some computational time.
+The ground rotation rates are then synthesized from a coarser
+fault discretization (namely
+5
+×
+5
+and
+6
+×
+6
+FD
+grid points)
+and compared to the continuous solution. Figure 3 shows the
+results of the verification. The
+z
+component of rotation rate
+has much larger amplitude (and error) than the other two
+components (not shown) because of the pure strike-slip
+source mechanism and, thus, is used to illustrate the results.
+The peak ground rotation rates (
+PGRRs
+), or, alternatively,
+peak ground rotational velocity, covering frequencies up to
+0.5 Hz for different source discretizations are compared over
+the entire study area. Figure 3a shows spatial (map) distribu-
+tion of the relative
+PGRR
+difference, that is, the difference
+between
+PGRRs
+for a discretized solution and the continuous
+one divided by the
+PGRR
+of the continuous solution. The
+largest relative difference is only 18% at the point denoted
+as P1 in the figure. In fact, the waveforms for different
+discretizations are almost identical as can also be seen from
+the waveform comparison (Fig. 3b) for point P1, where the
+largest relative
+PGRR
+difference is observed. 
+首先，对所有的120×60子故障进行M7有限故障地震情景模拟（作为连续解决方案）。
+由于地面运动要针对跨越计算领域的整个表面的大量接收机进行合成，我们寻求最粗糙的故障离散化以节省一些计算时间。
+然后从较粗糙的故障离散化（即5×5和6×6 FD网格点）合成地面旋转速率，并与连续解决方案进行比较。图3显示了验证的结果。
+旋转速率的z分量比其他两个分量（未示出）具有大得多的振幅（和误差），因为纯的走滑源机构，因此用于说明结果。
+峰值地面旋转速率（PGRR），或者替代地，在整个研究区域比较了不同源离散的峰值地面旋转速度，覆盖高达0.5Hz的频率。
+图3a显示相对PGRR差异的空间（映射）分布，即离散化溶液的PGRR与连续解的PGRR之间的差异除以连续解的PGRR。在图中P1表示的最大相对差异仅为18％。
+事实上，不同离散度的波形几乎是相同的，从对于观察到最大相对PGRR差的点P1的波形比较（图3b）也可以看出。
+Additionally,
+Figure 3c compares waveforms for different discretizations
+along the
+UV
+profile (see Fig. 3a). The lowest correlation
+coefficient value is 0.991. In conclusion, we further use
+solutions with 1.5 km subfault side-length (
+5
+×
+5
+FD
+grid
+points) as they are accurate enough for the
+M
+7 scenario
+earthquakes under study. This information might also be
+useful for other modelers as they can compute the Green
+’
+s
+functions for only the coarse discretization and save some
+computational time (our preferred discretization requires ap-
+proximately twenty-five times less computational time with
+respect to the continuous solution). However, attention has to
+be paid because the fault discretization required depends on
+rupture velocity, maximum frequency considered, etc. (Wang
+et al.
+, 2008).
+另外，图3c比较沿着UV轮廓的不同离散度的波形（见图3a）。最低相关系数为0.991。总而言之，我们进一步使用解决方案1。5 km subfault side-length（5×5 FD grid points），
+因为它们对于正在研究的M7情景地震是足够准确的。这些信息也可能对其他建模者有用，因为它们只能计算绿色函数，只能进行粗略的离散化，并节省一些计算时间（我们的首选离散度相对于连续解决方案的计算时间要少25倍） 。
+然而，必须注意，因为所需的故障离散化取决于破裂速度，考虑的最大频率等（Wang等人，2008）。
+Earthquake Scenario Simulations
+The precalculated
+NGF
+database allows us
+—
+within the
+limits of the method (e.g., reliable frequency range)
+—
+to
+synthesize ground motions from arbitrary strike-slip histories
+on the
+NI
+fault for the complete study area. How variations of
+the source parameters (namely hypocenter location and slip
+distributions) influence the shaking for a scenario earthquake
+is important for the estimation of seismic hazard. This is the
+question we will focus on in this study for the potential case
+of an
+M
+7 earthquake on the
+NI
+fault. As discussed pre-
+viously, we use the quasi-dynamic source model (Guatteri
+et al.
+, 2004) and the
+SCEC 3D
+velocity model for the
+LA
+ba-
+sin. The aim is to investigate the composite effect of the
+3D
+structure and the source complexity on the ground rotation
+rates and to provide a possible range of the ground rotation
+rates that might be generated by an
+M
+7 earthquake on the
+NI
+fault. The results are shown and analyzed in the follow-
+ing sections.
+地震场景模拟预先计算的NGF数据库允许我们在方法的极限（例如可靠的频率范围）内，从完整研究区域的NI故障的任意走滑历史中合成地面运动。
+源参数（即震源位置和滑移分布）的变化如何影响场景地震的震动对估计地震危害很重要。这是我们将在本研究中关注的一个问题，就是在NI故障中M7地震的潜在情况。
+如前所述，我们使用准动态源模型（Guatteri et al。，2004）和SCEC 3D速度模型作为LA波形。目的是研究3D结构和源复杂度对地面旋转速率的复合效应，
+并提供可能由NI故障发生的M 7地震产生的地面旋转速度范围。在以下部分中显示和分析结果。
+Effect Due to Hypocenter Location
+In this section, we investigate how variations of the hy-
+pocenter location for a given final slip distribution influence
+the ground rotation rate. Mai
+et al.
+(2005) studied statistically
+the relation between the nucleation point positions and the
+inverted slip models, showing that the hypocenters lie pre-
+dominantly close to the large-slip asperities. Nevertheless,
+to keep our study systematic and to include even the, per-
+haps, less plausible models with hypocenters lying further
+from the asperities, we assume a regular grid of
+4
+×
+6
+hypo-
+centers in the seismogenic zone (5
+–
+15 km depth) as indicated
+in the inset of Figure 1. The nucleation point together with
+the considered slip distribution constrain all the remaining
+kinematic features of the source model (rise times, rupture
+times, etc.). For each of these source models six-component
+seismograms are synthesized using the
+NGF
+database for the
+entire surface grid of receivers and analyzed. Only the
+PGRRs
+are discussed.
+由于反射点位置的影响在本节中，我们研究给定最终滑移分布的高精度位置的变化如何影响地面旋转速率。
+Mai et al。（2005）在统计学上研究了成核点位置与倒置滑移模型之间的关系，表明踢球者主要靠近大滑移粗糙度。
+然而，为了使我们的学习系统化，并且甚至包括更少的似是而非的模型与远古人之间的偏僻者，我们假设在发震区（5-15公里深度）内有4×6个中心的规则网格），
+如图1的插图所示。成核点与考虑的滑动分布一起约束了源模型的所有剩余运动特征（上升时间，断裂时间等）。
+对于每个这些源模型，使用NGF数据库对接收器的整个表面网格合成六分量地震图并进行分析。只讨论PGRRs。
+In Figure 4 we show maps of ground rotation rate due to
+varying hypocenter location in terms of maximum ground
+rotation rates and their variations. The maximum values de-
+scribe how fast a station could rotate during scenario
+M
+7
+earthquakes. In this study we aim to quantify the variations
+of ground rotation characteristics due to source characteris-
+tics. To this end, two ratios are considered:
+R
+SD
+—
+standard
+deviation relative to mean value, and
+R
+max
+—
+maximum value
+divided by mean value.
+R
+max
+quantifies the expected varia-
+tions in specific regions.
+在图4中，我们以最大地面旋转速率及其变化方式显示了由于震源位置变化引起的地面旋转速度的图。最大值描述了地震M 7次地震期间车站可以旋转的速度。
+在这项研究中，我们的目标是量化由于源特征引起的地面旋转特性的变化。为此，考虑两个比例：R SD - 相对于平均值的标准偏差，R max - 最大值除以平均值。R max可量化特定地区的预期变化。
+At first glance, all the maps in Figure 4 exhibit complex
+patterns. The largest rotation rate of the entire study area for
+the vertical component is eight times larger than those of the
+x
+component and five times larger than those of the
+y
+component. This phenomenon can be attributed to the source
+mechanism (pure strike slip). One can also see the amplifica-
+tion at all components in the basin area due to the lower wave
+velocities. The maximum rotation rate over the entire study
+area is observed close to the fault trace (inside region A sur-
+rounding the fault trace) but at varying places for different
+components. In region A for the
+x
+component, the maximum
+PGRR
+distribution is quite symmetrical about the middle of
+the fault trace in the
+x
+direction (Fig. 4, top left-hand panel).
+This symmetry is observed to a lesser extent for the other two
+components (Fig. 4, middle and bottom left-hand panels).
+乍一看，图4中的所有地图都显示出复杂的模式。垂直分量的整个研究区域的最大旋转速率是x分量的8倍，而y分量的最大旋转速率是其大5倍。
+这种现象可归因于源机制（纯冲击滑移）。由于波速较低，人们还可以看到盆地所有部件的放大率。观察到整个研究区域的最大旋转速率接近故障轨迹（围绕故障轨迹的区域A内），
+但在不同部件的不同位置观察。在X分量的区域A中，最大PGRR分布在x方向上的故障轨迹中间非常对称（图4，左上图）。对于其他两个组件（图4，中间和左下方面板），这种对称性的程度较小
+The ground-motion variation due to varying hypocenters
+is illustrated by showing the spatial distribution of the
+R
+SD
+ratio (Fig. 4, middle column). We focus on the two regions B
+and C, where substantial basin depth variations are located,
+to illustrate the
+3D
+effect on rotations. For the
+x
+component,
+there is no noticeable high
+R
+SD
+(Fig. 4, top middle panel) in-
+side these two regions. However, for the
+y
+component (Fig. 4,
+center panel) and the
+z
+-component (Fig. 4, bottom middle
+panel), a large
+R
+SD
+is observed when compared to the neigh-
+boring areas. The largest
+R
+SD
+of the whole study area, 75%
+for the
+y
+component and 72% for the
+z
+component, are all located inside region C. Right on the fault trace, the
+R
+SD
+ratio
+for the
+x
+component (Fig. 4, top middle panel) is similar to
+that in the neighboring regions. On the contrary, for the other
+two components (Fig. 4, center panel and bottom middle
+panel) the values above and close to the fault are smaller than
+those further from the fault. For all three components, but
+especially for the
+z
+component, large
+R
+SD
+values are found
+in the regions off both tips of the fault trace.
+通过显示R SD比例的空间分布（图4，中间列）来说明由于变化的偏心体引起的地面运动变化。
+我们专注于两个区域B和C，其中存在大量的盆地深度变化，以说明3D对旋转的影响。对于x组件，在这两个区域内没有明显的高R SD（图4，顶部中间面板）。
+然而，对于y组件（图4，中心面板）和z组件（图4，底部中间面板），与相邻区域相比，观察到大的R SD。
+整个研究区域的最大R SD，y分量的75％和z分量的72％均位于区域C内。在故障轨迹上，x分量的R SD比（图4，顶部中间面板）与邻近区域相似。
+反之，对于其他两个组件（图4，中心面板和底部中间面板），故障之上和之后的值都小于故障情况。对于所有三个组件，特别是z组件，在断层迹线两端的区域中都会发现大的R SD值。
+The distributions of the
+R
+max
+ratio are shown in Figure 4
+(right-hand column). For the
+y
+and
+z
+components (Fig. 4,
+middle and bottom right-hand panels), large values are ob-
+served in regions B (small basin) and C (i.e., same as for
+R
+SD
+). Moreover, the largest
+R
+max
+over the entire study area
+lies at the same positions (P2 for the
+y
+component and P3 for
+the
+z
+component) as for the
+R
+SD
+case. Small values are ob-
+served near the fault plane (region A) when compared to the
+neighboring areas. For the
+x
+component, the largest
+R
+max
+is at station P4, whereas the largest
+R
+SD
+is at station P5. At some
+places, the rotation rates can be two to three times larger than
+the mean rotation rates, which applies to all components.
+To summarize, generally, the largest values occur for the
+vertical rotational components. Maxima of all the compo-
+nents are concentrated in the basin area. For the
+x
+compo-
+nent, the largest values are close to the tips of the fault,
+which suggests that this component is mostly sensitive to the
+sole source (directivity) effect. The other two components are
+affected by a combination of the source and basin effects as
+the largest variations are located close to the basin edge (re-
+gion C in Fig. 4).
+R max比例的分布如图4所示（右栏）。对于y和z分量（图4，中右右侧面板），区域B（小盆地）和C（即与R SD相同）观察到较大的值。
+此外，整个研究区域的最大R max位于同一位置（对于y分量为P2，z分量为P3），与R SD情况相同。与相邻区域相比，在故障平面（区域A）附近观察到较小的值。
+对于x分量，最大的R max在站P4处，而最大的R SD在站P5。在某些地方，旋转速度可以是适用于所有组件的平均旋转速度的两到三倍。
+总而言之，一般来说，垂直旋转分量出现最大值。所有组分的最大值都集中在盆地。对于x分量，最大值接近故障的提示，这表明该组件对于唯一的源（方向性）效应最为敏感。
+其他两个组分受到源和盆地效应的组合的影响，因为最大的变化位于靠近盆地边缘（图4中的区域C）。总而言之，一般来说，垂直旋转分量出现最大值。
+所有组分的最大值都集中在盆地。对于x分量，最大值接近故障的提示，这表明该组件对于唯一的源（方向性）效应最为敏感。其他两个组分受到源和盆地效应的组合的影响，
+因为最大的变化位于靠近盆地边缘（图4中的区域C）。总而言之，一般来说，垂直旋转分量出现最大值。所有组分的最大值都集中在盆地。对于x分量，最大值接近故障的提示，
+这表明该组件对于唯一的源（方向性）效应最为敏感。其他两个组分受到源和盆地效应的组合的影响，因为最大的变化位于靠近盆地边缘（图4中的区域C）。
+
+Effect Due to Slip Distribution
+Here, we study the effect of the slip distribution keeping
+the hypocenter constant. We generate 20 random slip distri-
+butions, each corresponding to an
+M
+7 earthquake. Again
+the other kinematic parameters are obtained by the use of
+the quasi-dynamic approach by Guatteri
+et al.
+(2004).
+The results are shown in Figure 5 in the same way as in
+Figure 4. As in the previous case, the mapped quantities ex-
+hibit complex behavior. The largest rotation rate of the entire
+study area for the vertical component is 4.5 times larger than
+those of the
+x
+component and 6 times larger than those of the
+y
+component. For the
+x
+and
+z
+components (Fig. 5, top and
+bottom left-hand panels), the largest rotation rates are located
+above the fault, further from the epicenter close to the far
+right-hand end of the fault trace (region E). For the
+y
+com-
+ponent, the largest rotation rates happen at distinct points
+above the fault but also further from the fault trace (point
+P6 in Fig. 5, middle left-hand panel). For the
+x
+and
+z
+com-
+ponents, the rotation rates around point P6 are much smaller
+than those on the fault trace.
+滑移分布的影响这里，我们研究保持震源常数的滑动分布的影响。我们产生20个随机滑动分布，每个对应于M 7地震。
+Guatteri等人再次使用准动力学方法获得了其他运动学参数。（2004年）。结果如图5所示，与图4中的相同。
+与之前的情况相比，映射的数量超过了复杂的行为。垂直分量的整个研究区域的最大旋转速率是x分量的4.5倍，y分量的6倍。
+对于x和z分量（图5，左上和右下方面板），最大转速位于故障之上，距离震中更靠近故障轨迹（E区）的最右端， 。
+对于y组件，最大转速发生在故障之上的不同点处，但也远离故障迹线（图5中的点P6，中左侧面板）。
+对于x和z组件，点P6周围的旋转速度远小于故障轨迹上的旋转速度。
+The spatial distributions of
+R
+SD
+for all 20 simulations are
+shown in Figure 5, middle column. The largest
+R
+SD
+s of the entire study area are similar for all components (42% for the
+x
+component, 50% for the
+y
+component, and 45% for the
+vertical component) but not located at the same places. For
+the
+x
+component,
+R
+SD
+is very large inside region F, which
+is around the epicenter. For the other two components, the
+high ratios are restricted inside region G (banded region
+perpendicular to the fault trace). At point P7 (small basin
+edge), higher ratios are found for the
+y
+and
+z
+components
+but not for the
+x
+component when compared to those areas
+around the fault trace (region F). Right above the fault, vary-
+ing slip distributions introduce more variations on the fault-
+parallel component of the rotation rate than on the other two
+components.
+所有20个模拟的R SD的空间分布如图5，中间列所示。整个研究区域的最大R标准差对于所有组件（x组分为42％，y组分为50％，垂直组分为45％），
+但不位于相同位置。对于x分量，R SD在区域F周围是非常大的，其围绕震中。对于其他两个组件，高比例在区域G（垂直于故障迹线的带状区域）内受到限制。
+在点P7（小盆边）当与故障迹线周围的区域（区域F）相比时，对于y和z分量找到较高的比率，而不是x分量。
+在故障之上，不同的滑差分布在旋转速率的故障并联分量上引入了比其他两个组件更多的变化。
+The spatial distributions of the
+R
+max
+ratio are shown in
+Figure 5, right-hand column. These distributions are quite
+similar to those for
+R
+SD
+: the largest values of the entire study
+area are observed in the same areas. Right above the fault,
+large
+R
+max
+values are observed for the
+x
+component but not
+for the other two components, for which large values of
+R are mostly restricted to region G (banded region perpendicu-
+lar to the fault trace) further from the fault. High
+R
+max
+values
+are observed at point P7 (basin edge) for the
+z
+component.
+R max比例的空间分布如右图所示。这些分布与R SD非常相似：在同一地区观察到整个研究区域的最大值。
+在故障之上，对于x分量观察到大的R max值，而对于其他两个分量，不大于R的大R值，其中大的R值大部分被限制在距故障进一步的区域G（带状区域与故障轨迹相似） 。
+在z分量的点P7（盆边）处观察到高R最大值。
+Let us compare results obtained for a varied hypocen-
+ter position (Fig. 4). The distribution of maximum values
+(Figs. 4 and 5, left-hand columns) are very similar because
+the maxima are located within the basin and close to the
+fault. Comparing the results shown in Figures 4 and 5 in
+terms of
+R
+SD
+and
+R
+max
+(middle and right-hand columns),
+we can observe that varying the hypocenter has a stronger
+effect than keeping the hypocenter fixed and varying the slip
+histories. The case of varying slip distribution is character-
+ized by larger variations within the basin in contrast to the
+case of varying hypocenter positions, for which the largest
+variations are located at the borders (
+y
+and
+z
+components)
+or outside (
+x
+component) of the basin.
+让我们比较针对不同的重心位置获得的结果（图4）。最大值的分布（图4和图5左侧列）非常相似，因为最大值位于盆地内并且靠近故障。
+比较图4和图5中R SD和R max（中，右列）的结果，我们可以观察到，震源的变化比保持震源固定和变化滑移历史有更强的作用。
+变化的滑动分布的情况由盆地内的较大变化表征，与变化的震源位置的情况形成对比，其中最大变化位于边界（y和z分量）或外部（x分量）处盆地。
+Comparison with Translations
+For a horizontally polarized plane wave, the horizontal
+(transverse) acceleration and the vertical rotation rate have
+identical waveforms; they are scaled by twice the phase ve-
+locity, see equation (2) (e.g., Igel
+et al.
+, 2005, 2007). Com-
+parison of synthetic vertical rotation rates and horizontal
+accelerations simulated for the
+M
+7 hypothetical earthquakes
+on the
+NI
+fault showed that wavefronts are (near) planar
+(Wang, 2007) and that it is appropriate to relate peak ampli-
+tudes of translations and rotations. Because this amplitude
+ratio is related to the local phase velocity (equation 2), the
+ratios should be smaller inside the basin than outside because
+the basin is characterized by lower velocities. Note that we
+do not expect perfect match with the medium velocities be-
+cause (1) the plane-wave assumption is not perfectly satisfied
+and (2) the medium has depth-dependent velocities so only
+some mean velocity can be obtained.
+与翻译的比较对于水平极化的平面波，水平（横向）加速度和垂直旋转速率具有相同的波形; 它们被相位相移的两倍，参见等式（2）
+（例如，Igel等人，2005,2007）。对NI断层M7假想地震模拟的合成垂直旋转速率和水平加速度的比较表明，波前（近）平面（Wang，2007），
+并且适用于将平移和旋转的峰值幅度相关联。由于该振幅比与局部相速度（方程式2）有关，所以盆地内比值应比外部更小，因为盆地的速度较低。
+注意，我们不期望与中等速度完美匹配，因为（1）平面波假设不完全满足，（2）介质具有深度依赖速度，因此只能获得一些平均速度。
+
+We denote mean value
+of the peak ground accelerations as
+M
+PGA
+x
+and
+M
+PGA
+y
+for
+the
+x
+and
+y
+components, respectively. The mean value of
+the peak vertical rotation rate is denoted as
+M
+PGRR
+z
+.
+Figure  6  shows  the  ratios
+M
+PGA
+x
+=M
+PGRR
+z
+and
+M
+PGA
+y
+=M
+PGRR
+z
+in map view (omitting the factor 2), together
+with the basin depth (isosurface of the
+2
+km
+=
+sec shear-wave
+velocity), for the cases of varying hypocenter (left-hand col-
+umn) and varying slip history (right-hand column). For the
+x
+component of acceleration (Fig. 6, top row) the ratios are
+small inside the basin. Outside of the basin, except for region
+I, the estimated ratio is higher. In region I the ratio is still low,
+which is not in agreement with the larger velocities therein.
+This is not surprising because the waveforms themselves are
+not expected to be similar for the
+x
+component (propagation
+direction). In regions close to the northwest tip of the fault
+trace, when varying either hypocenter location or slip his-
+tory (Fig. 6, top row), the ratio is distinctly larger than
+4000
+m
+=
+sec, being much larger than those in the neighbor-
+ing areas and not compatible with the velocity model. In such
+areas, however, the assumption of an incoming plane wave is
+roughly violated.
+我们将峰值地面加速度的平均值分别表示为x和y分量的M PGA x和M PGA y。
+峰值垂直旋转速率的平均值表示为M PGRR z。图6示出了在地图视图（省略因子2）中的比率M PGA x = M PGRR z和M PGA y = M PGRR z以及盆地深度
+（2km =秒剪切波速度的等值面），用于变化震源（左侧柱）和变化滑移历史（右侧列）的情况。对于加速度的x分量（图6，顶行），盆地内的比例很小。
+除了区域I外，估计比例较高。在区域I中，该比例仍然很低，这与其中的较大速度并不一致。这并不奇怪，因为对于x分量（传播方向），波形本身并不期望是相似的。
+在接近断层迹象西北端的地区，当改变震源位置或滑移历史（图6，顶行）时，该比值明显大于4000m = sec，远大于邻近地区并且与速度模型不兼容。
+然而，在这些方面，大概违反了入射平面波的假设。
+For the
+y
+component of acceleration (Fig. 6, middle
+row), in region J (being outside the basin and thus character-
+ized by large velocities) the ratio between the acceleration
+and the vertical rotation rate is less than
+1700
+m
+=
+sec for
+the varying hypocenter case (Fig. 6, middle left-hand panel).
+This is, however, too low a value for the area outside of the
+basin. We explain this due to poor similarity of the
+y
+compo-
+nent of acceleration and the vertical rotation rate waveforms
+in this area (Wang, 2007). In the strike directions where the
+correlations are better, the predicted ratios are larger, corre-
+sponding to larger velocities outside the basin. For the vary-
+ing slip history case (Fig. 6, middle right-hand panel), the
+ratios in region J are higher (corresponding to higher veloci-
+ties in that area), which is, however, perhaps only accidental,
+because in region K (above the fault) the ratios are again
+higher than what would correspond to the local velocities.
+On the other hand, off the fault in the strike direction, the
+ratios again correspond roughly to the velocity model.
+A map of the average between the two ratios discussed
+previously,
+1
+=
+2
+
+M
+PGA
+x
+
+M
+PGA
+y
+
+=M
+PGRRz
+, is shown in Fig-
+ure 6 (bottom row) for both varying the hypocenter (bottom
+left-hand panel) and varying the slip history (bottom right-
+hand panel). A strong relation between this average and the
+local velocity is observed over almost the entire study area in
+these two cases. Large values of this parameter nicely deline-
+ate the basin structure. The only exceptions are the small re-
+gions around the tips of the fault trace where the plane-wave
+assumption is clearly violated.
+对于加速度的y分量（图6，中间行），在区域J（在盆地外面，因此以大的速度表征），对于变化的震源情况，
+加速度和垂直旋转速率之比小于1700m = sec（图6，中左手面板） 。然而，对于盆地以外的地区而言，这是太低的价值。
+我们解释这是由于加速度的这个部分和垂直旋转速率波形的相似性差（Wang，2007）。在相关性更好的罢工方向，
+预测比例较大，与盆地以外较大的速度相对应。对于不同的滑移历史案例（图6中右手面板），区域J中的比率较高（对应于该区域的较高速度），
+但这可能只是偶然的，因为在区域K（高于故障），比率再次高于对应于局部速度的比率。另一方面，在冲击方向断开故障，这些比率又大致对应于速度模型。
+之前讨论的两个比率之间的平均值映射，1 = 2？M PGA x？M PGA y？= M PGRRz，如图6（下排）所示，用于改变震源（左下图）和改变滑移历史（右下图）。
+在这两种情况下，在整个研究区域观察到该平均值与局部速度之间的强烈关系。这个参数的大值很好地描绘了盆地结构。唯一的例外是围绕故障迹线的尖端的小区域，
+其中平面波假设被明显地违反。
+Decay with Distance
+It is of practical importance to study how the peak rota-
+tion rates decay with distance. In particular, one can ask to
+what extent is the decay comparable to the decay known
+for peak translation motion (peak ground acceleration, peak
+ground velocity, etc.), which is usually characterized by the
+attenuation relations.
+In Figure 7 we show the maximum amplitude of both the
+y
+component of acceleration and the vertical rotation rate
+synthesized for the case of varying the hypocenter location
+and plot them against the distance to the fault. At first glance,
+the shapes of the point clouds are very similar. Both the ac-
+celeration and the rotation rate saturate for fault distances
+less than 10 km. It is also seen that the mean rotation rate
+decreases with fault distance similarly to acceleration for
+fault distances larger than 10 km. Local increase of the larg-
+est values is observed for both the rotation rates and the ac-
+celerations within range L (between 25 and 53 km). It covers
+the small basin depicted as region B and the steepest basin
+edge in region C in Figure 4, suggesting that the rotation
+rates are amplified in a way similar to acceleration by the
+small basin and the basin edge.
+用距离衰减研究峰值转速如何随着距离而衰减是非常重要的。特别地，可以询问与通常以衰减关系为特征的峰值运动（峰值地面加速度，峰值地面速度等）
+已知的衰减相当的衰减在多大程度上。在图7中，我们示出了加速度的y分量和在改变震源位置的情况下合成的垂直旋转速度的最大幅度，并将其与断层距离相比较。
+乍一看，点云的形状非常相似。故障距离小于10公里，加速度和旋转速率都会饱和。还可以看出，与故障距离大于10公里的平均转速相比，故障距离与加速度相似。
+观察到旋转速率和范围L（25至53公里）内的加速度的最大值的局部增加。它覆盖了图4所示的区域B和区域C中最陡峭的盆地边缘的小盆地，这表明旋转速率以类似于小盆地和盆地边缘的加速度的方式被放大。
+In conclusion, rotation rate linearly decreases with fault
+distance in log
+–
+log coordinates just as acceleration does.
+This suggests that when developing attenuation relationships
+for rotational motions, similar expressions (as a function of
+distance) as for the peak acceleration can be adopted.
+总之，转速随着故障距离的变化而线性减小，就像加速度一样，对数坐标。这表明，当开发旋转运动的衰减关系时，可以采用与峰值加速度相似的表达式（作为距离的函数）。
+Discussion and Conclusions
+We investigated how rupture-model variability and
+3D
+structure affect ground rotation rates in the frequency range
+up to 0.5 Hz. In the region surrounding the fault trace, the
+vertical component of rotation rates is systematically several
+times larger than the other two horizontal components, show-
+ing that the source mechanism (pure strike slip) dominates
+the ground rotation rates in this region.
+Variation in the hypocenter location leads to large vari-
+ations of the ground rotation rates. The fault-perpendicular
+component of acceleration and the vertical rotation rates
+are strongly affected by both the medium (basin structure)
+and the slip asperity location. However, there are no obvious
+effects of either the medium or the slip asperity location on
+the fault-parallel component. That component is dominated
+by the directivity effect. The basin effect is also observed for
+the variations of the
+y
+and
+z
+components of the peak rotation
+rates, the largest variations being located at the basin edges.
+In the region close to the fault, where large rotation rates are
+observed, the variations are small. Hence, not only the hy-
+pocenter location but also the elastic properties of the me-
+dium control the rotation rate variations.
+讨论和结论我们研究了断裂模型的变异性和3D结构如何影响到频率范围达到0.5Hz的地面旋转速率。
+在围绕故障轨迹的区域中，旋转速率的垂直分量系统地比其他两个水平分量大几倍，表明源机制（纯冲击滑移）主导了该区域的地面旋转速率。
+震源位置的变化导致地面旋转速率的变化很大。加速度和垂直转速的断层垂直分量受介质（盆地结构）和滑坡粗糙度位置的强烈影响。
+然而，在故障平行部件上的介质或滑移粗糙度位置没有明显的影响。该组件以方向性效应为主。对于峰值旋转速率的y和z分量的变化也观察到盆地效应，
+最大的变化位于盆地边缘。在接近故障的地区，观察到大的转速，其变化较小。因此，不仅中心位置，而且中心的弹性也控制了旋转速率变化。
+For the case of varying slip history, the directivity effect
+(if present) dominates the fault-parallel component in terms
+of absolute values and relative variations. These variations
+are, however, smaller than those for the case of varying
+hypocenter location. The velocity medium effect is mainly
+pronounced on the fault-perpendicular component when
+considering the maximum value. The variations of the rota-tion rates are largest in the basin structure, especially for the
+y
+and
+z
+components.
+Vertical rotation rates can be compared to horizontal ac-
+celerations as was done on the global scale by Igel
+et  al.
+(2005, 2007). These authors theoretically derived, assuming
+plane-wave incidence, the relation between the horizontal ac-
+celerations and vertical rotation rates. The waveforms are
+very similar, scaled by twice the local phase velocity (see
+equation 2). In our study, we have found areas where the
+waveform of one component of the horizontal acceleration
+was very similar to the vertical rotation rate waveform
+(Wang, 2007). This is consistent with the shear-wave radia-
+tion pattern of a double couple. The fault-parallel component
+of acceleration is similar to the vertical rotation rate in areas
+perpendicular to the fault strike, while the fault-normal com-
+ponent of acceleration is highly correlated to the vertical
+rotation rate in the strike direction of the fault. Therefore,
+waveform similarity is observed over the entire study area
+for at least one of the acceleration horizontal components.
+When the average of these ratios is considered, a good agree-
+ment is obtained over the whole area under study. We have
+found good correlation with the velocity model except for a
+very small region surrounding the fault trace. This suggests a
+new tool for basin edge detection based on the coprocess-
+ing of translational and rotational ground motion. This, of
+course, would require development of portable rotation
+meters and systematic surveys of an area under study.
+对于滑移历史变化的情况，方向性效应（如果存在）以绝对值和相对变化为主。
+然而，这些变化小于针对变化的震源位置的情况。考虑最大值时，速度介质效应主要在断层垂直分量上显着。
+盆地结构的转速变化最大，特别是y和z分量。可以将垂直旋转速率与水平加速度进行比较，如Igel等人在全球范围内进行的。
+（2005,2007）。这些作者在理论上推导了平面波入射，水平加速度与垂直旋转速率的关系。这些波形非常相似，
+按照局部相位速度的两倍进行缩放（参见等式2）。在我们的研究中，我们发现水平加速度的一个分量的波形与垂直旋转波形非常相似的区域（Wang，2007）。
+这与双对的剪切波辐射模式一致。加速度的故障平行分量与垂直于断层的区域的垂直旋转速度相似，而故障正常的加速度分量与故障撞击方向的垂直旋转速率高度相关。
+因此，对于至少一个加速度水平分量，在整个研究区域上观察到波形相似性。当考虑到这些比例的平均值时，在整个研究领域获得了良好的一致意见。
+除了围绕故障迹线的非常小的区域，我们已经发现与速度模型的良好相关性。这表明基于平移和旋转地面运动的协同处理的盆地边缘检测的新工具。
+这当然需要开发便携式旋转仪表和对正在研究的区域的系统调查。
+Finally, vertical rotation rate is found to decay with dis-
+tance in a way very similar to acceleration. Therefore, similar
+expressions (as a function of distance) as peak acceleration
+can be adopted for rotational motions attenuation relation-
+ships. This result is supported by the recent findings of
+Stupazzini
+et al.
+(2009).
+最后，发现垂直旋转速度与加速度非常相似的方式衰减。因此，作为峰值加速度的相似表达式（作为距离的函数）可以用于旋转运动衰减关系。
+这一结果得到了Stupazzini等人最近的研究结果的支持。（2009年）。
+Data and Resources
+The synthetic data used in this study were generated en-
+tirely using a
+3D
+finite-difference code (Ewald
+et al.
+, 2006)
+implemented in parallel on the supercomputers of the Leib-
+niz Supercomputer Centre in Munich, Germany. Information
+on the
+LA
+basin velocity model (Kohler
+et al.
+, 2003) was
+obtained from the
+SCEC
+web site (www.scec.org).
+Acknowledgments
+This work was partially funded by the International Quality Network-
+Georisk (German Academic Exchange Service) and the Elite Graduate
+College THESIS (elite.geophysik.uni
+‑
+muenchen.de). F. G. has been sup-
+ported by the Grant Agency of the Czech Republic (Grant Number 205/
+08/P013) and Grant Number MSM0021620800. We also acknowledge sup-
+port from the European Human Resources Mobility Programme (Research
+Training Network SPICE, www.spice-rtn.org) and the provision of compu-
+tational resources through the Leibniz Computing Centre Munich. We thank
+Martin Mai and one anonymous reviewer for excellent comments. We also
+thank KONWIHR for their support.
+数据和资源本研究中使用的合成数据完全使用在德国慕尼黑的Leibni超级计算机中心的超级计算机上并行实现的3D有限差分代码（Ewald等，2006）。
+关于LA盆地速度模型的信息（Kohler等，2003）是从SCEC网站（www.scec.org）获得的。致谢这项工作部分由国际质量网 - Georisk（德国学术交流服务）和精英研究生院（精英研究生院）（elite.geophysik.uni，Äëmuenchen.de）资助。
+FG 已由捷克共和国格兰特署（拨款号码205/08 / P013）和拨款号码MSM0021620800支持。我们还承认欧洲人力资源流动计划（研究培训网络SPICE，www.spice-rtn.org）的支持，并通过慕尼黑莱布尼茨计算中心提供计算资源。
+我们感谢Martin Mai和一位匿名评论者的好评。我们也感谢康宁国际的支持。
+
+
